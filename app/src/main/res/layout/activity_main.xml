@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+android:orientation="vertical"
+
+        android:gravity="center">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Συμπλήρωση στοιχείων"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022"></TextView>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:text="Λόγος Μετακίνησης"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.228"
+        android:layout_marginBottom="30sp"></TextView>
+
+    <EditText
+        android:id="@+id/stoixeia"
+        android:layout_width="320dp"
+        android:layout_height="47dp"
+        android:hint="Διεύθυνση Κατοικίας"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148"></EditText>
+
+    <EditText
+        android:id="@+id/stoixeia2"
+        android:layout_width="316dp"
+        android:layout_height="52dp"
+        android:hint="Ονοματεπώνυμο"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065"></EditText>
+
+    <EditText
+        android:id="@+id/logosxd"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:hint="Ονοματεπώνο"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.799"></EditText>
+
+    <RadioGroup
+        android:id="@+id/logoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+  >
+
+        <RadioButton
+            android:id="@+id/logos1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 - Μετάβαση σε φαρμακείο ή επίσκεψη στο γιατρό"
+            android:textSize="13sp"
+            android:layout_marginBottom="15sp"/>
+
+        <RadioButton
+            android:id="@+id/logos2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 - Μετάβαση σε εν λειτουργία κατάστημα προμηθειών αγαθών πρώτης ανάγκης"
+            android:textSize="13sp"
+            android:layout_marginBottom="15sp"/>
+
+        <RadioButton
+            android:id="@+id/logos3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 - Μετάβαση σε τράπεζα."
+            android:textSize="13sp"
+            android:layout_marginBottom="15sp"/>
+
+        <RadioButton
+            android:id="@+id/logos4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 - Κίνηση για παροχή βοήθειας ή συνοδεία ανήλικων μαθητών\n από/προς σχολείο"
+            android:textSize="13sp"
+            android:layout_marginBottom="15sp"/>
+
+        <RadioButton
+            android:id="@+id/logos5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 - Μετάβαση σε τελετή ή μετάβαση διαζευγμένων γονέων"
+            android:textSize="13sp"
+            android:layout_marginBottom="15sp"
+            />
+
+        <RadioButton
+            android:id="@+id/logos6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6 - Σωματική άσκηση ή κίνηση με κατοικίδιο ζώο"
+            android:textSize="13sp"
+           />
+
+    </RadioGroup>
+
+
+
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Αποστολή SMS"
+        android:layout_marginTop="30sp"
+        android:gravity="center"
+     >
+
+    </Button>
+
+
+
+
+
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Μεγέθυνση γραμματοσειράς"
+            android:layout_marginTop="20sp"
+
+            ></Button>
+
+        <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Σμίκρυνση γραμματοσειράς"
+        android:layout_marginTop="10sp"
+        ></Button>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Αναλυτικοί λόγοι μετακίνησης"
+            android:layout_marginTop="15sp"
+            ></Button>
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Πληροφορίες Εφαρμογής"
+            android:layout_marginTop="15sp"
+            ></Button>
+
+    </LinearLayout>
+
+</ScrollView>
